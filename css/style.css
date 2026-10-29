@@ -1,0 +1,228 @@
+
+body{
+    background-color:  rgba(230,200,160,0.2);
+}
+
+.navbar{
+    display: flex;
+    justify-content: space-evenly;
+    padding: 1rem;
+    margin: 0px;
+    gap: 10px;
+}
+
+a{
+    text-decoration: none;
+    color: rgb(74, 73, 73);
+    padding: 10px;
+}
+a :hover {color: black;
+    text-shadow: gray;
+
+}
+.logo{
+    align-items:flex-start;
+    margin: 10px;
+}
+
+.navlinks{
+    display: flex;
+    gap: 20px; 
+    margin: 10px;
+    display: inline;
+}
+.navlinks :hover{
+    color: black;
+}
+
+.container{ 
+    min-height: 200px;
+    min-width: 1000px;
+    margin-top: 5px;
+    margin: 100px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+grid-template-rows: 150px 150px 150px 150px;
+ grid-template-areas:
+        "one one one two"
+        "one one one three"
+        "four four five five"
+        "four four six seven";
+gap: 20px;
+
+.space{
+    display: flex;
+    justify-content: space-between;
+
+}
+
+}
+
+.one {
+    grid-area: one;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    
+
+}
+.one h5{
+    font-family: 'Courier New', Courier, monospace;
+     color: gray;
+          
+}
+
+.one p{
+    font-size: 2.5rem;
+
+}
+
+.one .green{
+    color: rgb(18, 89, 50);
+    font-style: italic;
+    
+
+}
+.one h6{
+    color:  rgb(28, 168, 91);
+}
+
+.two {
+    grid-area: two;
+    display: grid;
+}
+.two p{
+    font-size: 20px;
+    color: gray;
+}
+
+.two h5{
+    font-family: 'Courier New', Courier, monospace;
+     color: gray;
+    
+
+
+}
+.three {
+    grid-area: three;
+    display: grid;
+
+}
+.three h3{
+color: gray;
+}
+
+.three h5{
+    font-family: 'Courier New', Courier, monospace;
+     color: gray;
+}
+
+.four {
+    grid-area: four;
+    grid-column-start: 1;
+    grid-column-end: 3;
+    display: grid
+}
+.four p::after{
+    content: "I also have a strong backgroung in computer science.";
+    display: inline;
+    color: gray;
+    font-size: 25px;
+}
+.four p{
+    font-size: 25px;
+}
+
+.four h5{
+    font-family: 'Courier New', Courier, monospace;
+    color: gray;
+}
+
+.five {
+    grid-area: five;
+    display: grid;
+
+} 
+.five p{
+    font-size: 25px;
+}
+
+.five h5{
+    font-family: 'Courier New', Courier, monospace;
+     color: gray;
+}
+
+.six {
+    grid-area: six;
+    display: grid;
+    background-color: black !important;
+    color: white;
+
+}
+
+.six h5{
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 20px;
+
+}
+
+.seven {
+    grid-area: seven;
+}
+
+.seven{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.one, .two, .three, .four, .five, .six, .seven {
+    background-color: rgb(251, 252, 248);
+    padding: 20px;
+}
+
+.one:hover,
+.two:hover,
+.three:hover,
+.four:hover,
+.five:hover,
+.six:hover,
+.seven:hover {
+    background-color: whitesmoke;
+    transform: translateY(-2px);
+    transition: 0.3s ease;
+    box-shadow: 20em;
+}
+
+.hire{
+     background-color: #101111e8;
+    color: white;
+    padding: 10px 10px;
+    border-radius: 20px;
+    text-decoration: none;
+    display: inline;
+}
+
+.hire :hover{
+    color: white;
+}
+
+.two{
+    padding: 10px 10px;
+    text-decoration: none;
+}
+    
+.green-dot {
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    background-color: rgb(5, 70, 5);
+    border-radius: 50%;
+    animation: blink 1s infinite;
+}
+
+@keyframes blink {
+    50% {
+        opacity: 0;
+    }
+}
